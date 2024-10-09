@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>ADM</th>
+        <th>Email</th>
+        <th>Image</th>
+    </tr>
+
+    
+    {% for student in students %}
+    	<tr>
+            <td>{{ student.Name }}</td>
+            <td>{{ student.Age }}</td>
+            <td>{{ student.ADM }}</td>
+            <td>{{ student.Email }}</td>
+            <td>
+                <img src="/media/ {{ student.Image }}" alt="" width="">
+            </td>
+        
+        
+        </tr>
+        
+        
+        
+    {% endfor %}
+    
+
+
+
+
+</table>
+
+
+
+</body>
+</html>
